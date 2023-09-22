@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.example.bowling:League xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.example.bowling="http://org/eclipse/example/bowling" name="Bloat">
+  <players name="José da Costa" dateOfBirth="2001-05-12T00:00:00.000+0100" height="167.0" isProfessional="true"/>
+  <players name="Bruno Mendes" dateOfBirth="2001-04-24T00:00:00.000+0100" height="169.0" isProfessional="true"/>
+  <players name="Fernando Rego" dateOfBirth="2001-06-17T00:00:00.000+0100" height="177.0" isProfessional="true"/>
+  <players name="Ricardo Ribeiro" dateOfBirth="2000-09-24T00:00:00.000+0100" isProfessional="true"/>
+</org.eclipse.example.bowling:League>

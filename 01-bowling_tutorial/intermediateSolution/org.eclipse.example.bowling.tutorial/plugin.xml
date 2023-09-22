@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="org.eclipse.example.bowling.tutorial.contribution1">
+         <menu
+               label="Tutorial"
+               path="additions"
+               id="org.eclipse.example.bowling.tutorial.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Open Tournament Example View"
+               class="org.eclipse.example.bowling.tutorial.popup.actions.OpenExampleTournamentDialogAction"
+               menubarPath="org.eclipse.example.bowling.tutorial.menu1/group1"
+               enablesFor="1"
+               id="org.eclipse.example.bowling.tutorial.newAction">
+         </action>
+         <action
+               class="org.eclipse.example.bowling.tutorial.popup.actions.OpenExampleLeagueDialogAction"
+               enablesFor="1"
+               id="org.eclipse.example.bowling.tutorial.newAction2"
+               label="Open League Example View"
+               menubarPath="org.eclipse.example.bowling.tutorial.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
