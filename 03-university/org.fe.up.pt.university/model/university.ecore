@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    name="university" nsURI="http://www.example.org/university" nsPrefix="university">
+    <eClassifiers xsi:type="ecore:EClass" name="University">
+<eStructuralFeatures xsi:type="ecore:EReference" name="faculties" upperBound="-1" eType="#//Faculty"/>
+</eClassifiers>
+<eClassifiers xsi:type="ecore:EClass" name="Faculty">
+<eStructuralFeatures xsi:type="ecore:EReference" name="degrees" eType="#//Degree"/>
+</eClassifiers>
+<eClassifiers xsi:type="ecore:EClass" name="Degree">
+<eStructuralFeatures xsi:type="ecore:EReference" name="courses" eType="#//Course"/>
+</eClassifiers>
+<eClassifiers xsi:type="ecore:EClass" name="Course">
+<eStructuralFeatures xsi:type="ecore:EReference" name="edition" eType="#//Edition"/>
+<eStructuralFeatures xsi:type="ecore:EReference" name="teachers" eType="#//Professor"/>
+<eStructuralFeatures xsi:type="ecore:EReference" name="students" eType="#//Student"/>
+</eClassifiers>
+<eClassifiers xsi:type="ecore:EClass" name="Edition">
+<eStructuralFeatures xsi:type="ecore:EAttribute" name="year" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+</eClassifiers>
+<eClassifiers xsi:type="ecore:EClass" name="Professor">
+<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eClassifiers>
+<eClassifiers xsi:type="ecore:EClass" name="Student">
+<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+</eClassifiers>
+<eClassifiers xsi:type="ecore:EClass" name="Grade">
+<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+<eStructuralFeatures xsi:type="ecore:EReference" name="student" lowerBound="1" eType="#//Student"/>
+</eClassifiers>
+</ecore:EPackage>
